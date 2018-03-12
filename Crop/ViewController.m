@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *demoBtn;
 @property NSUInteger number;
 
 @end
@@ -20,11 +21,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     [self addObserver:self forKeyPath:@"number" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     
- 
-
+    
+    UILabel *lblb = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [self.view addSubview:lblb];
+    lblb.backgroundColor =  [UIColor yellowColor];
+    
+    //The first one is the setValue:forKey: and the second is the setValue:forKeyPath:.
+    
+    
+    ////Branch Two Work
 }
 
 
@@ -32,7 +39,18 @@
     
     self.number++;
     NSLog(@"%i", (int)self.number);
+    
+    
+    
+    [self setValue:[UIColor redColor] forKeyPath:@"self.demoBtn.backgroundColor"];
+    
+    UILabel *lblb = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [self.view addSubview:lblb];
+    lblb.backgroundColor =  [UIColor yellowColor];
+//    lblb setValue:<#(nullable id)#> forKey:<#(nonnull NSString *)#>
+    
 }
+
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
