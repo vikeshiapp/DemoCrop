@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    UIImageView *imageDemo;
+}
 @property (weak, nonatomic) IBOutlet UIButton *demoBtn;
 @property NSUInteger number;
 
@@ -23,7 +25,6 @@
     
     [self addObserver:self forKeyPath:@"number" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     
-    
     UILabel *lblb = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
     [self.view addSubview:lblb];
     lblb.backgroundColor =  [UIColor yellowColor];
@@ -31,10 +32,25 @@
     //The first one is the setValue:forKey: and the second is the setValue:forKeyPath:.
     
     
+    
+        imageDemo = [[UIImageView alloc]initWithFrame:CGRectMake(100, 80, 100, 80)];
+        [self.view addSubview:imageDemo];
+        imageDemo.image = [UIImage imageNamed:@"slide maker"];
+        imageDemo.contentMode =UIViewContentModeScaleAspectFill;
+    
+    [self createTranfomrAmime];
     ////Branch Two Work
 }
 
+    -(void)createTranfomrAmime{
 
+        [UIView animateWithDuration:4.0 animations:^{
+
+            imageDemo.transform = CGAffineTransformScale(imageDemo.transform, -1, 1);
+
+        }];
+
+    }
 - (IBAction)ButtonAction:(id)sender {
     
     self.number++;

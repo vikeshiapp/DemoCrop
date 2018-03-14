@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B39B9E5820593F9A0002223F /* hhh.png in Resources */ = {isa = PBXBuildFile; fileRef = B39B9E5720593F9A0002223F /* hhh.png */; };
+		B39B9E5A20593FE00002223F /* slide maker.png in Resources */ = {isa = PBXBuildFile; fileRef = B39B9E5920593FE00002223F /* slide maker.png */; };
 		B3C4D4602051702700E213E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C4D45F2051702700E213E7 /* AppDelegate.m */; };
 		B3C4D4632051702700E213E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C4D4622051702700E213E7 /* ViewController.m */; };
 		B3C4D4662051702700E213E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C4D4642051702700E213E7 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B39B9E5720593F9A0002223F /* hhh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hhh.png; sourceTree = "<group>"; };
+		B39B9E5920593FE00002223F /* slide maker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slide maker.png"; sourceTree = "<group>"; };
 		B3C4D45B2051702700E213E7 /* Crop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C4D45E2051702700E213E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B3C4D45F2051702700E213E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				B3C4D45F2051702700E213E7 /* AppDelegate.m */,
 				B3C4D4612051702700E213E7 /* ViewController.h */,
 				B3C4D4622051702700E213E7 /* ViewController.m */,
+				B39B9E5720593F9A0002223F /* hhh.png */,
+				B39B9E5920593FE00002223F /* slide maker.png */,
 				B3C4D4642051702700E213E7 /* Main.storyboard */,
 				B3C4D4672051702700E213E7 /* Assets.xcassets */,
 				B3C4D4692051702700E213E7 /* LaunchScreen.storyboard */,
@@ -131,7 +137,9 @@
 			files = (
 				B3C4D46B2051702700E213E7 /* LaunchScreen.storyboard in Resources */,
 				B3C4D4682051702700E213E7 /* Assets.xcassets in Resources */,
+				B39B9E5820593F9A0002223F /* hhh.png in Resources */,
 				B3C4D4662051702700E213E7 /* Main.storyboard in Resources */,
+				B39B9E5A20593FE00002223F /* slide maker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
